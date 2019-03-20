@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:padding="3dip"
+    >
+
+    <!-- 第1个TableLayout，用于描述表中的列属性。第0列可伸展，第1列可收缩 ，第2列被隐藏-->
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:shrinkColumns="1"
+        android:collapseColumns="2"
+        android:padding="3dip">
+        <TableRow>
+            <EditText android:text="Open..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                />
+            <EditText android:text="Ctrl-O"
+                android:layout_gravity="right"
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText android:text="Save..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                />
+            <EditText android:text="Ctrl-S"
+                android:layout_gravity="right"
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText android:text="Save As..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+
+                />
+            <EditText android:text="Ctrl-Shift-S"
+                android:layout_gravity="right"
+                android:textColor="#FFFFFF"
+
+                />
+
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#FF909090"/>
+
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:id="@+id/table2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:shrinkColumns="1"
+        android:collapseColumns="2"
+        android:padding="3dip">
+        <TableRow>
+            <EditText android:text="X Import..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                />
+
+        </TableRow>
+        <TableRow>
+            <EditText android:text="X Export..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                />
+            <EditText android:text="Ctrl-E"
+                android:layout_gravity="right"
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#FF909090"/>
+
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/table3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:shrinkColumns="1"
+        android:collapseColumns="2"
+        android:padding="3dip">
+        <TableRow>
+            <EditText android:text="Quit..."
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
